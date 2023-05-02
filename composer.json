@@ -1,6 +1,6 @@
 {
     "name": "imalirezapy/laravel-more-command",
-    "description": "Create a Repository and Service class and trait using Artisan CLI",
+    "description": "Create a Repository, Service, trait and Strategy using Artisan CLI",
     "license": "MIT",
     "authors": [
         {

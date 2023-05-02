@@ -66,7 +66,7 @@ class StrategyCommand extends CommandGenerator
         $this->replaces['interface_namespace'] = $this->replaces['class_namespace'] . "\\{$context}Interface";
         $this->replaces['interface'] = "{$context}Interface";
 
-        $path = base_path("app\\Services\\$path");
+        $path = base_path($this->getDestinationFilePath() . "\\$path");
 
         $file = $path . DIRECTORY_SEPARATOR . $context . '.php';
 
@@ -156,6 +156,6 @@ class StrategyCommand extends CommandGenerator
 
     protected function getDestinationFilePath(): string
     {
-        return 'string';
+        return 'app\\Services';
     }
 }
