@@ -161,7 +161,7 @@ php artisan make:strategy PaymentContext -sOnlinePayment -sOfflinePayment
 ```
 or
 ```
-php artisan make:strategy PaymentContext -strategy=OnlinePayment -strategy=OfflinePayment
+php artisan make:strategy PaymentContext --strategy=OnlinePayment --strategy=OfflinePayment
 ```
 
 __Create a strategy  with Interface.__\
