@@ -12,20 +12,20 @@ Laravel More Command is a collection of a few `php artisan` commands. You can us
 Require the package with composer using the following command:
 
 ```
-composer require theanik/laravel-more-command --dev
+composer require imalirezapy/laravel-more-command --dev
 ```
 
 Or add the following to your composer.json's require-dev section and `composer update`
 
 ```json
 "require-dev": {
-    "theanik/laravel-more-command": "^1.3.0"
+    "imalirezapy/laravel-more-command": "^1.0.0"
 }
 ```
 
 ## Publish Package Configuration
 ```shell
- php artisan vendor:publish --provider="Theanik\LaravelMoreCommand\LaravelMoreCommandProvider" --tag="config"
+ php artisan vendor:publish --provider="imalirezapy\LaravelMoreCommand\LaravelMoreCommandProvider" --tag="config"
 ```
 ### To Change Default Namespace [config/laravel-more-command.php]
 ```php
@@ -42,6 +42,7 @@ return [
 <div>
   <ol>
     <li><a href="#Make-Repository">Make Repository</a></li>
+    <li><a href="#Make-Strategy">Make Strategy</a></li>
     <li><a href="#Make-Service">Make Service</a></li>
     <li><a href="#Make-Trait">Make Trait</a></li>
     <li><a href="#Make-View">Make View</a></li>
@@ -133,8 +134,47 @@ class UserRepository
 ```
 
 <br />
+## Make Strategy
+__Create a context Class.__\
+`php artisan make:context context-name`
+
+Example:
+```
+php artisan make:strategy PaymentContext
+```
+or
+```
+php artisan make:repository Pay/PaymentContext
+```
+
+The above will create a **PaymentContext/Pay** directory inside the **app/Services** directory.\
+
+__Create a strategies classes.__\
+`php artisan make:strategy context-name {--s|strategy=*}   (multiple values allowed)`
+Example:
+```
+php artisan make:strategy PaymentContext -sOnlinePayment -sOfflinePayment
+```
+or
+```
+php artisan make:strategy PaymentContext -sOnlinePayment -sOfflinePayment
+```
+
+__Create a strategy with Interface.__\
+`php artisan make:strategy context-name -i`
+
+Example:
+```
+php artisan make:repository PaymentContext -i
+```
+or
+```
+php artisan make:repository Pay/PaymentContext -i
+```
+Here you need to put extra `-i` or `--interface` flag.
 
 
+<br />
 ## Make Service
 
 __Create a Service Class.__\
