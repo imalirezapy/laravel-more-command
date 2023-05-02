@@ -22,8 +22,5 @@
             "Theanik\\LaravelMoreCommand\\": "src/"
         },
         "classmap": ["src/"]
-    },
-    "require-dev": {
-        "orchestra/testbench": "dev-develop"
     }
 }
