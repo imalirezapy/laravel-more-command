@@ -134,9 +134,13 @@ class UserRepository
 ```
 
 <br />
+
 ## Make Strategy
+
+#### signature: `make:strategy {context} {--s|strategy=*} {--i|interface}`
+
 __Create a context Class.__\
-`php artisan make:context context-name`
+`php artisan make:stratey context-name`
 
 Example:
 ```
