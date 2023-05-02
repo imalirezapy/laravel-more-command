@@ -1,12 +1,11 @@
 {
-    "name": "theanik/laravel-more-command",
-    "require": {},
+    "name": "imalirezapy/laravel-more-command",
     "description": "Create a Repository and Service class and trait using Artisan CLI",
     "license": "MIT",
     "authors": [
         {
-            "name": "Anwar Hossain Anik",
-            "email": "anwar.anik33@gmail.com"
+            "name": "imalirezapy",
+            "email": "mousaviali1381@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -23,5 +22,8 @@
             "Theanik\\LaravelMoreCommand\\": "src/"
         },
         "classmap": ["src/"]
+    },
+    "require-dev": {
+        "orchestra/testbench": "dev-develop"
     }
 }
