@@ -13,7 +13,7 @@ use Theanik\LaravelMoreCommand\Commands\CreateModuleRepositoryCommand;
 use Theanik\LaravelMoreCommand\Commands\CreateModuleTraitCommand;
 use Theanik\LaravelMoreCommand\Commands\CreateModuleServiceCommand;
 use Theanik\LaravelMoreCommand\Commands\CreateModuleBladeCommand;
-
+use Theanik\LaravelMoreCommand\Commands\StrategyCommand;
 
 
 class LaravelMoreCommandProvider extends ServiceProvider
@@ -31,6 +31,7 @@ class LaravelMoreCommandProvider extends ServiceProvider
             CreateServiceCommand::class,
             CreateBladeCommand::class,
             ClearLogCommand::class,
+            StrategyCommand::class,
 
             // For nWidart/laravel-modules:
             CreateModuleRepositoryCommand::class,
