@@ -1,7 +1,7 @@
 ![issues](https://img.shields.io/github/issues/imalirezapy/laravel-more-command??style=flat&logo=appveyor)
 ![forks](https://img.shields.io/github/forks/imalirezapy/laravel-more-command?style=flat&logo=appveyor)
 ![stars](https://img.shields.io/github/stars/imalirezapy/laravel-more-command?style=flat&logo=appveyor)
-[![GitHub license](https://img.shields.io/github/license/imalirezapy/laravel-more-command)](https://github.com/theanik/laravel-more-command/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/imalirezapy/laravel-more-command)](https://github.com/imalirezapy/laravel-more-command/blob/master/LICENSE)
 
 # Laravel More Command
 Laravel More Command is a collection of a few `php artisan` commands. You can use it to create a __Repository, Repository with Interface, Service, Trait, View(blade file)__, and __Clear Log__ from the command line using `php artisan` command.\
